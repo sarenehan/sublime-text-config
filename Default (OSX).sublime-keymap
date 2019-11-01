@@ -15,8 +15,14 @@
     "command": "run_multiple_commands",
     "args": {
       "commands": [
-        {"command": "insert", "args": {"characters": "import pdb; pdb.set_trace()", "context": "window"}},
-        {"command": "save", "context" : "window"}
+        {"command": "copy"},
+        {"command": "insert", "args": {"characters": "try:"}},
+        {"command": "run_macro_file", "args": {"file": "res://Packages/Default/Add Line.sublime-macro"}},
+        {"command": "paste"},
+        {"command": "run_macro_file", "args": {"file": "res://Packages/Default/Add Line.sublime-macro"}},
+        {"command": "insert", "args": {"characters": "except:"}},
+        {"command": "run_macro_file", "args": {"file": "res://Packages/Default/Add Line.sublime-macro"}},
+        {"command": "insert", "args": {"characters": "import pdb; pdb.set_trace()"}, "context": "window"}
       ]
     }
   },

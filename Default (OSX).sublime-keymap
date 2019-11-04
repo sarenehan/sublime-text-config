@@ -11,6 +11,16 @@
     }
   },
   {
+    "keys": ["ctrl+alt+d"],
+    "command": "run_multiple_commands",
+    "args": {
+      "commands": [
+        {"command": "insert", "args": {"characters": "import pdb; pdb.set_trace()", "context": "window"}},
+        {"command": "save", "context" : "window"}
+      ]
+    }
+  },
+  {
     "keys": ["ctrl+shift+d"],
     "command": "run_multiple_commands",
     "args": {

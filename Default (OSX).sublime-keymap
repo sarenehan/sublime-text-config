@@ -111,18 +111,6 @@
     "args": {"characters": "@cache.cached(timeout=60 * 60 * 24 * 60)"}
   },
   {
-    "keys": ["super+e"],
-    "command": "run_multiple_commands",
-    "args": {
-      "commands": [
-        {"command": "focus_group", "args": {"group":1}, "context" : "window"},
-        {"command": "insert", "args": {"characters": "setwd('/Users/stewart/projects/scienceotron/sdk_data_explore/rcode')"}, "context": "window"},
-        {"command": "repl_enter", "args": {}, "context": "window"},
-        {"command": "focus_group", "args": {"group":0}, "context" : "window"},
-      ]
-    }
-  },
-  {
     "keys": ["super+m"],
     "command": "run_multiple_commands",
     "args": {

@@ -37,18 +37,6 @@
     }
   },
   {
-   "keys": ["ctrl+w"],
-   "command": "run_multiple_commands",
-   "args": {
-      "commands": [
-        {"command": "focus_group", "args": {"group":1}, "context" : "window"},
-        {"command": "insert", "args": {"characters": "import os; os.chdir('/Users/stewart/projects/uwnet-forked')"}, "context": "window"},
-        {"command": "repl_enter", "args": {}, "context": "window"},
-        {"command": "focus_group", "args": {"group":0}, "context" : "window"},
-      ]
-    }
-  },
-  {
     "keys": ["ctrl+i"],
     "command": "run_multiple_commands",
     "args": {
